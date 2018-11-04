@@ -8,12 +8,11 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import android.support.v7.widget.RecyclerView;
 
 public class PhotoResponse {
     private static final String API_BASE_URL = "https://photo-album-eniac.herokuapp.com/";
     private static List<PhotoFields> Photos;
-    private void initiatePhotoApi(RecyclerView recyclerView) {
+    private void initiatePhotoApi() {
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(API_BASE_URL)
